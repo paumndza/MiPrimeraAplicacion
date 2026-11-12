@@ -35,22 +35,22 @@ export default function HomeScreen() {
         <ThemedView style={styles.heroSection}>
           <AnimatedIcon />
           <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
+            Paula
           </ThemedText>
         </ThemedView>
 
         <ThemedText type="code" style={styles.code}>
-          get started
+          TECNICO SALESIANO
         </ThemedText>
 
         <ThemedView type="backgroundElement" style={styles.stepContainer}>
           <HintRow
-            title="Try editing"
+            title="CURSO"
             hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
           />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
+          <HintRow title="HERRAMIENTAS" hint={getDevMenuHint()} />
           <HintRow
-            title="Fresh start"
+            title="ESPECIALIDAD"
             hint={<ThemedText type="code">npm run reset-project</ThemedText>}
           />
         </ThemedView>
@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     flexDirection: 'row',
+    backgroundColor: '#fdf2f8',
   },
   safeArea: {
     flex: 1,
@@ -84,9 +85,16 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
+    color: 'pink',
+    fontWeight: 'bold',
+    letterSpacing: 2,
+    color: '#db2777',
   },
   code: {
     textTransform: 'uppercase',
+    textTransform: 'uppercase',
+    color: '#be185d',
+    fontWeight: '700',
   },
   stepContainer: {
     gap: Spacing.three,
@@ -94,5 +102,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.four,
     borderRadius: Spacing.four,
+    borderRadius: 20,
+    backgroundColor: '#ffffff',
+    borderWidth: 2,
+    borderColor: '#f472b6',
   },
 });
